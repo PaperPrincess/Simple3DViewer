@@ -9,7 +9,8 @@
 <?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vsu.cgcourse.GuiController">
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vsu.cgcourse.GuiController" stylesheets="/style.css">
+
     <MenuBar prefHeight="35.0" prefWidth="375.0">
         <Menu mnemonicParsing="false" text="File">
             <MenuItem mnemonicParsing="false" onAction="#onOpenModelMenuItemClick" text="Load Model">
@@ -119,44 +120,40 @@
                 </graphic>
             </MenuItem>
         </Menu>
-      <Menu mnemonicParsing="false" text="Rotation">
-         <items>
+        <Menu mnemonicParsing="false" text="Rotation">
             <MenuItem mnemonicParsing="false" onAction="#drawRotateMenu" text="RotateX">
-               <graphic>
-                  <TextField id="RotateX" fx:id="RotationX" promptText="1" />
-               </graphic>
+                <graphic>
+                    <TextField id="RotateX" fx:id="RotationX" promptText="1"/>
+                </graphic>
             </MenuItem>
             <MenuItem mnemonicParsing="false" onAction="#drawRotateMenu" text="RotateY">
-               <graphic>
-                  <TextField id="RotateY" fx:id="RotationY" promptText="1" />
-               </graphic>
+                <graphic>
+                    <TextField id="RotateY" fx:id="RotationY" promptText="1"/>
+                </graphic>
             </MenuItem>
             <MenuItem mnemonicParsing="false" onAction="#drawRotateMenu" text="RotateZ">
-               <graphic>
-                  <TextField id="RotateZ" fx:id="RotationZ" promptText="1" />
-               </graphic>
+                <graphic>
+                    <TextField id="RotateZ" fx:id="RotationZ" promptText="1"/>
+                </graphic>
             </MenuItem>
-         </items>
-      </Menu>
-      <Menu mnemonicParsing="false" text="Translation">
-         <items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Translation">
             <MenuItem mnemonicParsing="false" onAction="#drawTranslateMenu" text="TranslationX">
-               <graphic>
-                  <TextField id="TranslationX" fx:id="TranslateX" promptText="1" />
-               </graphic>
+                <graphic>
+                    <TextField id="TranslationX" fx:id="TranslateX" promptText="1"/>
+                </graphic>
             </MenuItem>
             <MenuItem mnemonicParsing="false" onAction="#drawTranslateMenu" text="TranslationY">
-               <graphic>
-                  <TextField id="TranslationY" fx:id="TranslateY" promptText="1" />
-               </graphic>
+                <graphic>
+                    <TextField id="TranslationY" fx:id="TranslateY" promptText="1"/>
+                </graphic>
             </MenuItem>
             <MenuItem mnemonicParsing="false" onAction="#drawTranslateMenu" text="TranslationZ">
-               <graphic>
-                  <TextField id="TranslationZ" fx:id="TranslateZ" promptText="1" />
-               </graphic>
+                <graphic>
+                    <TextField id="TranslationZ" fx:id="TranslateZ" promptText="1"/>
+                </graphic>
             </MenuItem>
-         </items>
-      </Menu>
+        </Menu>
     </MenuBar>
 
     <Canvas fx:id="canvas" height="870" width="1600" AnchorPane.topAnchor="30.0" />

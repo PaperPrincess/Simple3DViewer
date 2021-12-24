@@ -1,0 +1,21 @@
+.menu-bar {
+    -fx-background-color: darkgray;
+    -fx-background-radius: 5;
+    -fx-highlight-text-fill: white;
+    -fx-text-fill: white;
+}
+
+#anchorPane {
+    -fx-background-color: gray;
+}
+
+.button {
+    -fx-background-color: darkgray;
+    -fx-background-radius: 5;
+    -fx-highlight-text-fill: white;
+}
+
+.menu {
+    -fx-text-fill: white;
+    -fx-background-color: darkgray;
+}
